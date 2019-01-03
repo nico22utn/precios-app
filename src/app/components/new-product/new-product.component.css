@@ -1,0 +1,15 @@
+.container{
+    margin: 10px;
+    text-align: -webkit-center;
+}
+form {
+    display: inline-grid;
+}
+
+.mat-form-field {
+    margin: 10px;
+}
+.mat-mini-fab {
+    background: #673ab7;
+    color: #fff;
+}

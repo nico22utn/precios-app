@@ -1,0 +1,25 @@
+<div class="container">
+  
+  <form >
+    <mat-form-field  hintLabel="Máximo 20 caracteres">
+      <input matInput #input maxlength="20" placeholder="Nombre producto">
+      <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+    </mat-form-field>
+    <div class="row">
+        <input id="input-file-id" multiple type="file">
+    </div>
+    <mat-form-field>
+      <mat-select placeholder="Tipo Producto">
+        <mat-option value="option">Ades</mat-option>
+      </mat-select>
+      <!-- <mat-hint align="end">Here's the dropdown arrow ^</mat-hint> -->
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Precio" type="number" class="example-right-align">
+      <span matPrefix>$&nbsp;</span>
+    </mat-form-field>
+    <button mat-mini-fab type="submit">
+      <mat-icon >done</mat-icon>
+    </button>
+  </form>
+</div >
